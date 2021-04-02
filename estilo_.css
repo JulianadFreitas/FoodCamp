@@ -1,0 +1,24 @@
+.topo {
+    width: 100%;
+    right: 0;
+    top:0;
+    position: fixed;
+    height: 92px;
+    background-color: #CF2B2B;
+}
+
+.fechamento {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom:0;
+    height: 92px;
+    background-color: #fff;
+}
+
+.lista1 {
+    width: 100%;
+    height: 250px;
+    background-color: yellow;
+}
+
