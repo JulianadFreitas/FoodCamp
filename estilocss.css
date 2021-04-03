@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
  }
@@ -5,6 +6,8 @@
  body {
   background-color:#E5E5E5;
  }
+
+
 
 .topo {
   width: 100%;
@@ -35,7 +38,7 @@
 }
 .pagina {
   width: 620px;
-  height: 920px;
+  height: 940px;
   
 }
 
@@ -130,3 +133,26 @@
   line-height: 23px;
   letter-spacing: 0.018em;
   }
+
+.cobertura {
+  background: #fff;
+  height: 940px;
+  width: 100%;
+  opacity: 0.9;
+  position: absolute;
+  right: 0px;
+  top: 1085px;
+  z-index: 1;
+  }
+
+.caixa-confirmacao {
+  Width: 377px;
+  Height: 353px;
+  position: fixed;
+  right: calc(50% - 377px/2);
+  top: calc(50% - 353px/2);
+  background: #50D074;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;  
+}
+}
