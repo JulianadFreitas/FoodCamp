@@ -1,6 +1,9 @@
 let selecao1=0;
 let selecao2=0;
 let selecao3=0;
+let pratoselecionado;
+let bebidaselecionada;
+let sobremesaselecionada;
 
 
 function selecionarprato(classeprato, numero) {
@@ -13,8 +16,8 @@ function selecionarprato(classeprato, numero) {
     const seletor = "." + classeprato + "." + numero;
     const pratos = document.querySelector(seletor);
     pratos.classList.add('selecionado');
+   
     selecao1=1;
-
     verificar()
 }
 
@@ -47,7 +50,7 @@ function selecionarsobremesa(classesobremesa, numero) {
 }
 
  function verificar() {
-     
+
     if (selecao1 !== 0 && selecao2 !== 0 && selecao3 !== 0) {
         const antigo = document.querySelector(".fechamento");
         const final = document.querySelector(".verde");
@@ -55,7 +58,7 @@ function selecionarsobremesa(classesobremesa, numero) {
         final.classList.remove('escondido');
         final.classList.add('mostra');
         
-
+    
         let prato=document.querySelector(".primeira .selecionado .titulo").innerHTML;
         let drink=document.querySelector(".segunda .selecionado .titulo").innerHTML;
         let doce=document.querySelector(".terceira .selecionado .titulo").innerHTML;
@@ -63,12 +66,16 @@ function selecionarsobremesa(classesobremesa, numero) {
         let precobebida=(document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',','.').replace('R$','')
         let precosobremesa=(document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',','.').replace('R$','')
         let precototal=parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
-
+        
+        const endereco  = prompt("Qual o seu endereço?");
+        const nome = prompt ("qual o seu nome?");
 
         const texto = `Olá, gostaria de fazer o pedido:
         - Prato: ${prato}
         - Bebida: ${drink}
         - Sobremesa: ${doce}
+        - Endereço: ${endereco}
+        - Nome: ${nome}
           Total: R$ ${precototal.toFixed(2).replace('.',',')}`;
         const textoEncode=encodeURI(texto);
         const link=`https://wa.me/5553991713429?text=${textoEncode}`
