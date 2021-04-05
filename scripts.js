@@ -47,32 +47,33 @@ function selecionarsobremesa(classesobremesa, numero) {
 }
 
  function verificar() {
+     
     if (selecao1 !== 0 && selecao2 !== 0 && selecao3 !== 0) {
         const antigo = document.querySelector(".fechamento");
         const final = document.querySelector(".verde");
         antigo.classList.add('escondido');
         final.classList.remove('escondido');
         final.classList.add('mostra');
+        
 
-
-
-        let prato=document.querySelector(".primeira .selecionado titulo").innerHTML;
-        let drink=document.querySelector(".segunda .selecionado titulo").innerHTML;
-        let doce=document.querySelector(".terceira .selecionado titulo").innerHTML;
+        let prato=document.querySelector(".primeira .selecionado .titulo").innerHTML;
+        let drink=document.querySelector(".segunda .selecionado .titulo").innerHTML;
+        let doce=document.querySelector(".terceira .selecionado .titulo").innerHTML;
         let precocomida=(document.querySelector(".primeira .selecionado .preco").innerHTML).replace(',','.').replace('R$','')
         let precobebida=(document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',','.').replace('R$','')
         let precosobremesa=(document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',','.').replace('R$','')
         let precototal=parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
 
 
-        const texto=`Olá, gostaria de fazer o pedido:
+        const texto = `Olá, gostaria de fazer o pedido:
         - Prato: ${prato}
         - Bebida: ${drink}
         - Sobremesa: ${doce}
           Total: R$ ${precototal.toFixed(2).replace('.',',')}`;
         const textoEncode=encodeURI(texto);
         const link=`https://wa.me/5553991713429?text=${textoEncode}`
-        final.innerHTML=`<a href="https://wa.me/5553991713419?text=${textoEncode}">Fechar pedido</a>`
+        final.innerHTML=`<a href="https://wa.me/5553991713429?text=${textoEncode}">Fechar pedido</a>`
+        
     }
  }
 
