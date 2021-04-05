@@ -72,7 +72,7 @@ function selecionarsobremesa(classesobremesa, numero) {
           Total: R$ ${precototal.toFixed(2).replace('.',',')}`;
         const textoEncode=encodeURI(texto);
         const link=`https://wa.me/5553991713429?text=${textoEncode}`
-        final.innerHTML=`<a href="https://wa.me/5521971794262?text=${textoEncode}">Fechar pedido</a>`
+        final.innerHTML=`<a href="https://wa.me/5553991713419?text=${textoEncode}">Fechar pedido</a>`
     }
  }
 

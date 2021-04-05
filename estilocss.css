@@ -37,12 +37,10 @@
   font-size: 44px;
   padding-left: 20px;
 }
-.pagina {
-  width: 620px;
-  height: 940px;
-  
-}
 
+.pagina {
+  width: 100%;
+}
 .corpo {
   margin-top: 112px;
   background-color:#E5E5E5;
