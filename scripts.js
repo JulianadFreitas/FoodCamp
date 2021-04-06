@@ -76,12 +76,12 @@ function botaoverde() {
     precobebida = (document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
     precosobremesa = (document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
     precototal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
+    
+    const precototaltela = document.querySelector(".mascara .caixa-confirmacao .total");
+    precototaltela.innerHTML =`"R$" + precototal)`;
 }
 
 function wpp() {
-
-    const encaminha = document.querySelector(".mascara .tudocerto");
-
     const texto = `Olá, gostaria de fazer o pedido:
         - Prato: ${prato}
         - Bebida: ${drink}
@@ -92,6 +92,5 @@ function wpp() {
         - Nome: ${nome}`;
     const textoEncode = encodeURI(texto);
     const link = `https://wa.me/5553991713429?text=${textoEncode}`
-    encaminha.innerHTML = `<a href="https://wa.me/5553991713429?text=${textoEncode}">Tudo certo, pode pedir</a>`
     window.location.href = `https://wa.me/5553991713429?text=${textoEncode}`;
 }
