@@ -3,7 +3,7 @@ let selecaoBebida = 0;
 let selecaoSobremesa = 0;
 let pratoSelecionado;
 let bebidaSelecionada;
-let sobremeSaselecionada;
+let sobremesaSelecionada;
 let prato;
 let drink;
 let doce;
@@ -78,20 +78,20 @@ function verificar() {
 }
 
 function botaoverde() {
-    const endereco = prompt("Qual o seu endereço?");
-    const nome = prompt("Qual o seu nome?");
+     endereco = prompt("Qual o seu endereço?");
+     nome = prompt("Qual o seu nome?");
 
     const tela = document.querySelector(".mascara");
     tela.classList.remove('escondido');
 
 
-    const prato = document.querySelector(".primeira .selecionado .titulo").innerHTML;
-    const drink = document.querySelector(".segunda .selecionado .titulo").innerHTML;
-    const doce = document.querySelector(".terceira .selecionado .titulo").innerHTML;
-    const precocomida = (document.querySelector(".primeira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
-    const precobebida = (document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
-    const precosobremesa = (document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
-    const precototal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
+    prato = document.querySelector(".primeira .selecionado .titulo").innerHTML;
+    drink = document.querySelector(".segunda .selecionado .titulo").innerHTML;
+    doce = document.querySelector(".terceira .selecionado .titulo").innerHTML;
+    precocomida = (document.querySelector(".primeira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
+     precobebida = (document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
+    precosobremesa = (document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
+     precototal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
 
     const total = document.querySelector(".mascara .caixa-confirmacao .descricao .total");
     total.innerHTML = precototal.toFixed(2).replace('.', ',').replace('', 'R$ ');
@@ -121,7 +121,7 @@ function wpp() {
         - Prato: ${prato}\n
         - Bebida: ${drink}\n
         - Sobremesa: ${doce}\n
-          Total: R$ ${precototal}.toFixed(2).replace('.',',')}\n
+          Total:  R$ ${precototal.toFixed(2).replace('.',',')}\n
           
         - Endereço: ${endereco}\n
         - Nome: ${nome}`;
