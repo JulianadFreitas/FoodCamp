@@ -1,4 +1,6 @@
 {
     "liveServer.settings.useBrowserPreview": true,
-    "liveServer.settings.NoBrowser": true
+    "liveServer.settings.NoBrowser": true,
+    "liveServer.settings.port": 5503,
+    "liveServer.settings.CustomBrowser": "chrome"
 }
