@@ -1,7 +1,5 @@
 <h1 align="center">
-<br>
   <img src="imagens/Group_18.png" alt="Parrot Card Game" width="70">
-<br>
 <br>
 Site mobile do FoodCamp 🍔🥤
 </h1>
