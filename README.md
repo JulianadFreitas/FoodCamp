@@ -17,16 +17,17 @@ Site mobile do FoodCamp 🍔🥤
 </p>
 
 <div align="center">
-  <img src="imagens/foto1.JPG" alt="demo" height="200">
-  <img src="imagens/foto2.JPG" alt="demo" height="200">
-  <img src="imagens/foto3.JPG" alt="demo" height="200">
-  <img src="imagens/foto4.JPG" alt="demo" height="200">
-  <img src="imagens/foto5.JPG" alt="demo" height="200">
-  <img src="imagens/20210411_201524.jpg" alt="demo" height="200">
+  <img src="imagens/foto1.JPG" alt="demo" height="320">
+  <img src="imagens/foto2.JPG" alt="demo" height="320">
+  <img src="imagens/foto3.JPG" alt="demo" height="320">
+  </div>
+<div align="center"><img src="imagens/foto4.JPG" alt="demo" height="320">
+  <img src="imagens/foto5.JPG" alt="demo" height="320">
+  <img src="imagens/20210411_201524.jpg" alt="demo" height="320">
 </div>
 
-<hr />
 
+<hr />
 
 [//]: # (Add the features of your project here:)
 ### Página desenvolvida utilizando CSS, HTML e JavaScript.
