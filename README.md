@@ -32,10 +32,10 @@ Site mobile do FoodCamp 🍔🥤
 
 ### Funcionalidades:
 - Lista dos pedidos com scroll horizontal;
-- Janela de confirmação do pedido que soma o total da compra e encaminhamento do mesmo para o whatsapp com mensagem pronta.
+- Janela de confirmação do pedido que soma o total da compra e encaminhamento do mesmo para o whatsapp com mensagem pronta;
 
 ### Conhecimentos:
 - Para a organização do layout: 
- Flex-Box, 
+ Flex-Box;
  ícones da biblioteca Ionicons;
-- JavaScript: prompt, .querySelector, Position Fixed
+- JavaScript: prompt, .querySelector, Position Fixed;
