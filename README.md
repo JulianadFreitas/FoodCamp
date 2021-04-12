@@ -35,7 +35,5 @@ Site mobile do FoodCamp 🍔🥤
 - Janela de confirmação do pedido que soma o total da compra e encaminhamento do mesmo para o whatsapp com mensagem pronta;
 
 ### Conhecimentos:
-- Para a organização do layout: 
- Flex-Box;
- ícones da biblioteca Ionicons;
+- Para a organização do layout: Flex-Box, ícones da biblioteca Ionicons;
 - JavaScript: prompt, .querySelector, Position Fixed;
