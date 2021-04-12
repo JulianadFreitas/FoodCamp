@@ -78,20 +78,19 @@ function verificar() {
 }
 
 function botaoverde() {
-     endereco = prompt("Qual o seu endereço?");
-     nome = prompt("Qual o seu nome?");
+    endereco = prompt("Qual o seu endereço?");
+    nome = prompt("Qual o seu nome?");
 
     const tela = document.querySelector(".mascara");
     tela.classList.remove('escondido');
-
 
     prato = document.querySelector(".primeira .selecionado .titulo").innerHTML;
     drink = document.querySelector(".segunda .selecionado .titulo").innerHTML;
     doce = document.querySelector(".terceira .selecionado .titulo").innerHTML;
     precocomida = (document.querySelector(".primeira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
-     precobebida = (document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
+    precobebida = (document.querySelector(".segunda .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
     precosobremesa = (document.querySelector(".terceira .selecionado .preco").innerHTML).replace(',', '.').replace('R$', '')
-     precototal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
+    precototal = parseFloat(precocomida) + parseFloat(precobebida) + parseFloat(precosobremesa);
 
     const total = document.querySelector(".mascara .caixa-confirmacao .descricao .total");
     total.innerHTML = precototal.toFixed(2).replace('.', ',').replace('', 'R$ ');
@@ -101,7 +100,7 @@ function botaoverde() {
 
     const telaprecobebida = document.querySelector(".mascara .caixa-confirmacao .descricao .valorb");
     telaprecobebida.innerHTML = precobebida.replace('.', ',').replace('', 'R$');
-   
+
     const telaprecosobremesa = document.querySelector(".mascara .caixa-confirmacao .descricao .valors");
     telaprecosobremesa.innerHTML = precosobremesa.replace('.', ',').replace('', 'R$');
 
@@ -128,9 +127,9 @@ function wpp() {
     const textoEncode = encodeURI(texto);
     const link = `https://wa.me/5581993089298?text=${textoEncode}`
     window.location.href = `https://wa.me/5581993089298?text=${textoEncode}`;
-} 
+}
 
-function cancelar(){
+function cancelar() {
     const cancelar = document.querySelector(".mascara");
     cancelar.classList.add('escondido');
 }
