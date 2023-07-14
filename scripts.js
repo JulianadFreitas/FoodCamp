@@ -125,8 +125,8 @@ function wpp() {
         - Endereço: ${endereco}\n
         - Nome: ${nome}`;
     const textoEncode = encodeURI(texto);
-    const link = `https://wa.me/5581993089298?text=${textoEncode}`
-    window.location.href = `https://wa.me/5581993089298?text=${textoEncode}`;
+    const link = `https://wa.me/51936424989?text=${textoEncode}`
+    window.location.href = `https://wa.me/51936424989?text=${textoEncode}`;
 }
 
 function cancelar() {

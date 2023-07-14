@@ -11,7 +11,7 @@ Site mobile do FoodCamp 🍔🥤
 </p>
 
 <p align="center">
-  Acesse o site <a href="https://julianadfreitas.github.io/Projeto_03_FoodCamp/"> aqui </a>
+  Acesse o site <a href="https://tachuelota.github.io/Projeto_03_FoodCamp/"> aqui </a>
 </p>
 
 <div align="center">
